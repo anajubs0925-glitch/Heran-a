@@ -1,14 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Criando objetos para testar
+        
         Aluno aluno = new Aluno("Ana", "9999-9999", "123456789", 101);
-        Professor prof = new Professor("Carlos", "8888-8888", "987654321", "Mestre");
-        Funcionario func = new Funcionario("João", "7777-7777", "111222333", 1, "Secretário");
+        Professor prof = new Professor("Yasmin", "8888-8888", "987654321", "Mestre");
+        Funcionario func = new Funcionario("Yana", "7777-7777", "111222333", 1, "Secretário");
 
         Responsavel resp = new Responsavel(aluno);
 
-        // Testando métodos
         aluno.aprender();
         prof.ensinar();
         func.desempenharFuncao();
@@ -17,7 +16,6 @@ public class Main {
     }
 }
 
-// Classe base
 class Pessoa {
     String nome;
     String fone;
@@ -34,7 +32,6 @@ class Pessoa {
     }
 }
 
-// Herança
 class Funcionario extends Pessoa {
     int cod;
     String funcao;
@@ -76,7 +73,6 @@ class Professor extends Pessoa {
     }
 }
 
-// Associação
 class Responsavel {
     Aluno aluno;
 
