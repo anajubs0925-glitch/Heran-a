@@ -1,1 +1,17 @@
+public class Pessoa {
+   String nome;
+   String fone;
+   String cpf;
+
+   Pessoa(String var1, String var2, String var3) {
+      this.nome = var1;
+      this.fone = var2;
+      this.cpf = var3;
+   }
+
+   void documento() {
+      System.out.println("Documento: " + this.cpf);
+   }
+}
+
 
