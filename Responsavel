@@ -1,1 +1,9 @@
+public class Responsavel {
+   Aluno aluno;
+
+   Responsavel(Aluno var1) {
+      this.aluno = var1;
+   }
+}
+
 
