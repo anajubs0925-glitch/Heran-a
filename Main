@@ -1,1 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Aluno aluno = new Aluno("Ana", "9999-9999", "123456789", 101);
+        Professor prof = new Professor("Carlos", "8888-8888", "987654321", "Mestre");
+        Funcionario func = new Funcionario("João", "7777-7777", "111222333", 1, "Secretário");
+
+        Responsavel resp = new Responsavel(aluno);
+
+        aluno.aprender();
+        prof.ensinar();
+        func.desempenharFuncao();
+
+        aluno.documento();
+    }
+}
+
 
