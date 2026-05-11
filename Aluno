@@ -1,13 +1,17 @@
 public class Aluno extends Pessoa {
-   int matricula;
 
-   Aluno(String var1, String var2, String var3, int var4) {
-      super(var1, var2, var3);
-      this.matricula = var4;
-   }
+    private String matricula;
 
-   void aprender() {
-      System.out.println(this.nome + " está aprendendo...");
-   }
+    public Aluno(String nome, String fone, String cpf, String matricula) {
+        super(nome, fone, cpf);
+        this.matricula = matricula;
+    }
+
+    public void saudacao() {
+        System.out.println("Oi! Eu sou o aluno " + nome);
+    }
+
+    public void aprende() {
+        System.out.println(nome + " está aprendendo.");
+    }
 }
-
