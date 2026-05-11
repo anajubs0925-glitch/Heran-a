@@ -1,18 +1,23 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        Aluno aluno = new Aluno("Ana", "9999-9999", "123456789", 101);
-        Professor prof = new Professor("Carlos", "8888-8888", "987654321", "Mestre");
-        Funcionario func = new Funcionario("João", "7777-7777", "111222333", 1, "Secretário");
+        Pessoa p = new Pessoa("Júlia", "9999-9999", "111");
+        Aluno a = new Aluno("Ana", "8888-8888", "222", "2026");
+        Funcionario("Yana", "7777-7777", "333", 10, "Secretária");
+        Professor("Sarah", "5555-5555", "666", 20, "Professora", "Mestre");
 
-        Responsavel resp = new Responsavel(aluno);
+        Aluno[]lista = {a};
 
-        aluno.aprender();
-        prof.ensinar();
-        func.desempenharFuncao();
+        Responsavel r = new Responsavel("Letícia", "4444-4444", "555", lista);
 
-        aluno.documento();
+        p.saudacao();
+        a.saudacao();
+        f.saudacao();
+        prof.saudacao();
+        r.saudacao();
+
+        a.aprende();
+        f.desenhaFuncao();
+        prof.ensina();
     }
 }
-
-
